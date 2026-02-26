@@ -8,6 +8,31 @@
       "subtasks": [],
       "priority": "low",
       "comments": []
+    },
+    {
+      "id": "task_1772113225612",
+      "title": "тест",
+      "description": "",
+      "project": "",
+      "tags": [
+        ""
+      ],
+      "subtasks": [],
+      "priority": "medium",
+      "createdAt": "2026-02-26T13:40:25.612Z",
+      "status": "in_progress",
+      "sortOrder": 0
+    }
+  ],
+  "lastUpdated": "2026-02-26T13:40:32.868Z",
+  "activities": [
+    {
+      "type": "moved",
+      "actor": "murielcharlote-gif",
+      "task": "тест",
+      "from": "permanent",
+      "to": "in_progress",
+      "time": "just now"
     }
   ]
 }
