@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Control - MoltBot</title>
+    <title>Штаб Кло - MoltBot</title>
     <style>
         :root {
             --bg-primary: #0d0d0d;
@@ -2099,7 +2099,7 @@
     <div id="login-screen" class="login-screen">
         <div class="login-container">
             <div class="login-logo">🎯</div>
-            <h1 class="login-title">Mission Control</h1>
+            <h1 class="login-title">Штаб Кло</h1>
             <p class="login-subtitle">Task & Project Management Dashboard</p>
 
             <div class="login-card">
@@ -2159,7 +2159,7 @@
         <div class="header-left">
             <div class="logo">
                 <span>🎯</span>
-                <span>Mission Control</span>
+                <span>Штаб Кло</span>
             </div>
             <nav class="nav-tabs">
                 <div class="nav-tab active" data-view="tasks" onclick="switchView('tasks')">Tasks</div>
@@ -2173,7 +2173,7 @@
                     <input type="text" 
                            id="search-input" 
                            class="search-input" 
-                           placeholder="Search tasks..." 
+                           placeholder="Поиск задач..." 
                            oninput="handleSearch(this.value)"
                            onkeydown="if(event.key==='Escape'){clearSearch()}">
                     <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -2292,7 +2292,7 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot permanent"></div>
-                    <span class="column-title">Permanent</span>
+                    <span class="column-title">Постоянные</span>
                     <span class="column-count" id="count-permanent">0</span>
                     <span class="column-add" onclick="openNewTask('permanent')" title="Add new task">+</span>
                 </div>
@@ -2302,7 +2302,7 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot backlog"></div>
-                    <span class="column-title">Backlog</span>
+                    <span class="column-title">Бэклог</span>
                     <span class="column-count" id="count-backlog">0</span>
                     <span class="column-add" onclick="openNewTask('backlog')" title="Add new task">+</span>
                 </div>
@@ -2312,7 +2312,7 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot in-progress"></div>
-                    <span class="column-title">In Progress</span>
+                    <span class="column-title">В работе</span>
                     <span class="column-count" id="count-in_progress">0</span>
                     <span class="column-add" onclick="openNewTask('in_progress')" title="Add new task">+</span>
                 </div>
@@ -2322,7 +2322,7 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot review"></div>
-                    <span class="column-title">Review</span>
+                    <span class="column-title">На проверке</span>
                     <span class="column-count" id="count-review">0</span>
                     <span class="column-add" onclick="openNewTask('review')" title="Add new task">+</span>
                 </div>
@@ -2332,7 +2332,7 @@
             <div class="column">
                 <div class="column-header">
                     <div class="column-dot done"></div>
-                    <span class="column-title">Done</span>
+                    <span class="column-title">Готово</span>
                     <span class="column-count" id="count-done">0</span>
                     <button class="archive-all-btn" onclick="showArchiveView()" title="View archived tasks" style="background: transparent;">📂 View</button>
                     <button class="archive-all-btn" onclick="archiveAllDone()" title="Archive all done tasks">📦 Archive All</button>
@@ -2360,7 +2360,7 @@
     <!-- DOCS VIEW -->
     <div id="view-docs" class="view" style="display: none;">
         <div class="docs-container" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
-            <h1 style="margin-bottom: 1.5rem;">📚 Mission Control Documentation</h1>
+            <h1 style="margin-bottom: 1.5rem;">📚 Штаб Кло Documentation</h1>
 
             <div class="docs-section" style="margin-bottom: 2rem; background: var(--bg-secondary); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent);">
                 <h2 style="color: var(--accent); margin-bottom: 0.5rem;">📌 Demo Mode</h2>
@@ -2374,7 +2374,7 @@
 
                 <h3 style="margin: 1rem 0 0.5rem;">Installation</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Add Mission Control to your existing MoltBot workspace:
+                    Add Штаб Кло to your existing MoltBot workspace:
                 </p>
                 <ol style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
                     <li><strong>Fork</strong> this repository to your GitHub account</li>
@@ -2391,12 +2391,12 @@
                     <li>Go to <a href="https://github.com/settings/tokens" target="_blank" style="color: var(--accent);">GitHub Settings → Tokens</a></li>
                     <li>Click "Generate new token (classic)"</li>
                     <li>Select scope: <code>repo</code> (Full control of private repositories)</li>
-                    <li>Copy the token and paste it in Mission Control</li>
+                    <li>Copy the token and paste it in Штаб Кло</li>
                 </ol>
 
                 <h3 style="margin: 1.5rem 0 0.5rem;">Understanding the Board</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Mission Control uses a Kanban-style board with 5 columns:
+                    Штаб Кло uses a Kanban-style board with 5 columns:
                 </p>
                 <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
                     <li><strong>🔄 Permanent</strong> - Repeating tasks (daily, weekly checks)</li>
@@ -2445,7 +2445,7 @@
             <div class="docs-section" style="margin-bottom: 2rem;">
                 <h2 style="color: var(--accent); margin-bottom: 1rem;">🤖 MoltBot Integration</h2>
                 <p style="color: var(--text-secondary); line-height: 1.6;">
-                    Mission Control is connected to MoltBot via webhooks. When you make changes:
+                    Штаб Кло is connected to MoltBot via webhooks. When you make changes:
                 </p>
                 <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 1.5rem;">
                     <li><strong>Move task to "In Progress"</strong> → MoltBot receives a work order and starts processing</li>
@@ -2582,7 +2582,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="hideAuthModal()">Cancel</button>
+                <button class="btn btn-secondary" onclick="hideAuthModal()">Отмена</button>
                 <button class="btn btn-primary" id="btn-save-token" onclick="validateAndSaveToken()" disabled>Connect</button>
             </div>
         </div>
@@ -2647,7 +2647,7 @@
                         <div style="display: flex; gap: 8px; align-items: center;">
                             <label style="font-size: 0.8rem; color: var(--text-secondary);">Farbe:</label>
                             <input type="color" id="new-project-color" value="#6366f1" style="width: 50px; height: 32px; border: none; cursor: pointer; border-radius: 4px;">
-                            <button class="btn btn-secondary" id="btn-cancel-project" onclick="cancelEditProject()" style="display: none;">Cancel</button>
+                            <button class="btn btn-secondary" id="btn-cancel-project" onclick="cancelEditProject()" style="display: none;">Отмена</button>
                             <button class="btn btn-primary" id="btn-save-project" onclick="saveProject()" style="flex: 1;">+ Add Project</button>
                         </div>
                     </div>
@@ -2676,7 +2676,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="hideCommitModal()">Cancel</button>
+                <button class="btn btn-secondary" onclick="hideCommitModal()">Отмена</button>
                 <button class="btn btn-primary" id="btn-commit" onclick="commitChanges()">
                     <span id="commit-btn-text">Commit & Push</span>
                     <div class="spinner" id="commit-spinner" style="display: none;"></div>
@@ -2714,7 +2714,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Priority</label>
+                        <label class="form-label">Приоритет</label>
                         <select class="form-input" id="task-priority">
                             <option value="low">Low</option>
                             <option value="medium">Medium</option>
@@ -2761,8 +2761,8 @@
             <div class="modal-footer">
                 <button class="btn btn-danger" id="btn-delete-task" onclick="deleteTask()" style="margin-right: auto;">Delete</button>
                 <button class="btn btn-secondary" id="btn-task-to-cron" onclick="openTaskToCronWizard(currentEditingTaskId)" title="Convert to recurring cron job">⏰ As Cron</button>
-                <button class="btn btn-secondary" onclick="hideTaskModal()">Cancel</button>
-                <button class="btn btn-primary" onclick="saveTask()">Save Task</button>
+                <button class="btn btn-secondary" onclick="hideTaskModal()">Отмена</button>
+                <button class="btn btn-primary" onclick="saveTask()">Сохранить задачу</button>
             </div>
         </div>
     </div>
@@ -3235,7 +3235,7 @@
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            message: commitMessage || 'Update tasks via Mission Control',
+                            message: commitMessage || 'Update tasks via Штаб Кло',
                             content: content,
                             sha: STATE.fileSha,
                             branch: CONFIG.branch
@@ -3356,7 +3356,7 @@
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            message: commitMessage || 'Update crons via Mission Control',
+                            message: commitMessage || 'Update crons via Штаб Кло',
                             content: content,
                             sha: STATE.cronsSha,
                             branch: CONFIG.branch
@@ -4078,11 +4078,11 @@
             tasksInColumn.splice(insertIdx, 0, task);
 
             // Recalculate sortOrder for all tasks in this column (within same priority groups)
-            let currentPriority = null;
+            let currentПриоритет = null;
             let orderCounter = 0;
             tasksInColumn.forEach(t => {
-                if (t.priority !== currentPriority) {
-                    currentPriority = t.priority;
+                if (t.priority !== currentПриоритет) {
+                    currentПриоритет = t.priority;
                     orderCounter = 0;
                 }
                 t.sortOrder = orderCounter++;
@@ -4223,7 +4223,7 @@
                 return;
             }
 
-            const commitMessage = `${action} (via Mission Control)`;
+            const commitMessage = `${action} (via Штаб Кло)`;
             showToast('info', '💾 Saving...');
 
             const success = await saveTasksToGitHub(commitMessage);
@@ -4432,7 +4432,7 @@
             }
             
             // CSV Header
-            const headers = ['ID', 'Title', 'Description', 'Status', 'Priority', 'Project', 'Tags', 'Created', 'Completed', 'Archived'];
+            const headers = ['ID', 'Title', 'Description', 'Status', 'Приоритет', 'Project', 'Tags', 'Created', 'Completed', 'Archived'];
             
             // CSV Rows
             const rows = archivedTasks.map(task => [
@@ -4824,7 +4824,7 @@
             saveBtn.onclick = () => saveCommentEdit(taskId, commentIdx, textarea.value);
 
             const cancelBtn = document.createElement('button');
-            cancelBtn.textContent = 'Cancel';
+            cancelBtn.textContent = 'Отмена';
             cancelBtn.className = 'btn btn-secondary btn-small';
             cancelBtn.style.cssText = 'margin-top: 8px; margin-left: 8px;';
             cancelBtn.onclick = () => renderComments(task);
@@ -5399,7 +5399,7 @@
         }
 
         async function commitChanges() {
-            const message = document.getElementById('commit-message').value.trim() || 'Update tasks via Mission Control';
+            const message = document.getElementById('commit-message').value.trim() || 'Update tasks via Штаб Кло';
 
             document.getElementById('commit-btn-text').textContent = 'Saving...';
             document.getElementById('commit-spinner').style.display = 'inline-block';
@@ -5864,7 +5864,7 @@
                             <input type="datetime-local" class="form-input" id="scheduled-datetime" value="${dateStr}">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Priority</label>
+                            <label class="form-label">Приоритет</label>
                             <select class="form-input" id="scheduled-priority">
                                 <option value="low">Low</option>
                                 <option value="medium" selected>Medium</option>
@@ -5873,7 +5873,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" onclick="closeScheduledTaskDialog()">Cancel</button>
+                        <button class="btn btn-secondary" onclick="closeScheduledTaskDialog()">Отмена</button>
                         <button class="btn btn-primary" onclick="saveScheduledTask()">Schedule Task</button>
                     </div>
                 </div>
@@ -6064,11 +6064,11 @@
             tasksInColumn.splice(insertIdx, 0, task);
 
             // Recalculate sortOrder for all tasks in this column
-            let currentPriority = null;
+            let currentПриоритет = null;
             let orderCounter = 0;
             tasksInColumn.forEach(t => {
-                if (t.priority !== currentPriority) {
-                    currentPriority = t.priority;
+                if (t.priority !== currentПриоритет) {
+                    currentПриоритет = t.priority;
                     orderCounter = 0;
                 }
                 t.sortOrder = orderCounter++;
@@ -6242,7 +6242,7 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" style="margin-right: auto;" onclick="convertCronToTask('${cronId}')">📋 As Task</button>
-                        <button class="btn btn-secondary" onclick="closeCronEditor()">Cancel</button>
+                        <button class="btn btn-secondary" onclick="closeCronEditor()">Отмена</button>
                         <button class="btn btn-primary" onclick="saveCronChanges('${cronId}')">Save Changes</button>
                     </div>
                 </div>
@@ -6567,7 +6567,7 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" id="wizard-back" onclick="wizardBack()" style="display: none;">Back</button>
-                        <button class="btn btn-secondary" onclick="closeTaskToCronWizard()">Cancel</button>
+                        <button class="btn btn-secondary" onclick="closeTaskToCronWizard()">Отмена</button>
                         <button class="btn btn-primary" id="wizard-next" onclick="wizardNext('${taskId}')" style="display: none;">Next</button>
                         <button class="btn btn-primary" id="wizard-create" onclick="createCronFromTask('${taskId}')" style="display: none;">Create Cron</button>
                     </div>
@@ -6785,7 +6785,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" onclick="closeCronToTaskDialog()">Cancel</button>
+                        <button class="btn btn-secondary" onclick="closeCronToTaskDialog()">Отмена</button>
                         <button class="btn btn-primary" onclick="executeConvertCronToTask('${cronId}')">Create Task</button>
                     </div>
                 </div>
